@@ -37,6 +37,31 @@
             header nav *:hover{
                 color: #BBB;
             }
+            table {
+                border-collapse: collapse;
+            }
+            .row{
+                display: flex;
+                flex-direction: column;
+                border: 4px solid gray;
+                box-sizing: border-box;
+            }
+            .row *{
+                border-top: 2px solid gray;
+                padding: 0 8px;
+                font-size: 15px;
+                height: 38px;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+            }
+            .code p{
+                font-family: Consolas, 'Courier New', Courier, monospace;
+            }
+            #container{
+                display: flex;
+                flex-direction: row;
+            }
         </style>
     </head>
     <body>
@@ -48,5 +73,23 @@
             </nav>
             <div style="clear: both;"></div>
         </header>
+        <div style="margin-top: 64px;"></div>
+        <div id="container">
+            <div class="row" style="max-width: 400px;">
+                <h1>Function</h1>
+                <p>Print/Output (with new line)</p>
+                <p>Print/Output (without new line)</p>
+            </div>
+            <div class="row code" style="max-width: 300px;">
+                <h1>Python</h1>
+                <p>print(&lttext/variable&gt)</p>
+                <p>print(&lttext/variable&gt, end='')</p>
+            </div>
+            <div class="row code" style="width: 300px;">
+                <h1>Java</h1>
+                <p>System.out.println(&lttext/variable&gt)</p>
+                <p>System.out.println(&lttext/variable&gt, end='')</p>
+            </div>
+        </div>
     </body>
 </html>
